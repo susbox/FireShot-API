@@ -1,0 +1,22 @@
+<html>
+
+<head>
+	<script type="text/javascript" src="fsapi.js" onerror="alert('Error: failed to load ' + this.src)">
+	</script>
+	<script>
+		// Set this to *false* to avoid addon auto-installation if missed.
+		FireShotAPI.AutoInstall = true;
+	</script>
+</head>
+
+<body>
+	<div align="center">
+		<form>
+			<p>See errors at the page?</p>
+			<input type="button" onClick="FireShotAPI.emailPage(true)" value="Click to email this page how you see it.">
+		</form>
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<html>
+
+<head>
+	<script type="text/javascript" src="fsapi.js"></script>
+	<script type="text/javascript">
+		function checkFSAPI() {
+			var element = document.getElementById("spnPluginStatus");
+
+			if (typeof (FireShotAPI) != "undefined" && FireShotAPI.isAvailable())
+				element.innerHTML = "<b>Installed and ready!</b>";
+			else
+				element.innerHTML = "<b>Not installed</b>, please see the " +
+					"<a href='https://getfireshot.com/api-required.php'>troubleshooting page</a>";
+		}
+	</script>
+</head>
+
+<body>
+	<p>FireShot addon status: <span id="spnPluginStatus">unknown, press "Check Status" button</span>
+		<br>
+		<br>
+		<input type="button" onClick="checkFSAPI()" value="Check Status" />
+	</p>
+</body>
+
+</html>
